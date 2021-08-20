@@ -11,23 +11,23 @@ const NavBar = () => {
     return (
         <div className="flex flex-row items-center justify-between mx-8 mt-8 max-w-screen-2xl mx-auto">
             <div>
-                <Image src={logoImg} alt="Basement" onClick={() => {}}/>
+                <Image className="cursor-pointer" src={logoImg} alt="Basement" onClick={() => {}}/>
             </div>
             <div className="flex content-center space-x-3">
                 <div>
-                    <Image src={nuclearIco} onClick={() => {}} />
+                    <Image className="cursor-pointer" src={nuclearIco} onClick={() => {}} />
                 </div>
                 <div>
-                    <Image src={hdIco} onClick={() => {}}/>
+                    <Image className="cursor-pointer" src={hdIco} onClick={() => {}}/>
                 </div>
                 <div>
-                    <Image src={eyeIco} onClick={() => {}}/>
+                    <Image className="cursor-pointer" src={eyeIco} onClick={() => {}}/>
                 </div>
                 <div>
-                    <Image src={four4kIco} onClick={() => {}}/>
+                    <Image className="cursor-pointer" src={four4kIco} onClick={() => {}}/>
                 </div>
                 <div>
-                    <Image src={warningIco} onClick={() => {}}/>
+                    <Image className="cursor-pointer" src={warningIco} onClick={() => {}}/>
                 </div>
             </div>
             <div>
