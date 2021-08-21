@@ -5,8 +5,8 @@ import Product from "./Product";
 
 const GridProducts = () => {
   return (
-    <div className="py-16">
-      <div className="grid grid-cols-3 gap-10 mx-10">
+    <div className="py-5 md:py-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mx-8">
         <div>
           <Product
             index={0}

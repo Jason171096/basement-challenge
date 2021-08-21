@@ -3,7 +3,7 @@ import footerImg from '../../public/footer.svg';
 
 function Footer() {
     return (
-        <div className="flex justify-center py-10">
+        <div className="flex justify-center mx-8 py-5 md:py-10">
             <Image src={footerImg} alt="Footer" />
         </div>
     )

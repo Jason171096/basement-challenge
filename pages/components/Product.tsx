@@ -10,15 +10,15 @@ interface IDataProduct {
 }
 
 const Product = (props: IDataProduct) => {
-    let _addToCartImg = document.querySelectorAll<HTMLElement>(".addToCart");
-    for (let index = 0; index < _addToCartImg.length; index++) {
-      _addToCartImg[index].style.visibility = "hidden";
-    }
+    //let _addToCartImg = (document.querySelectorAll(".addToCart"));
+    // for (let index = 0; index < _addToCartImg.length; index++) {
+    //   _addToCartImg[index].style.visibility = "hidden";
+    // }
     const hiddenElement = () => {
-      _addToCartImg[props.index].style.visibility = "hidden";
+      //_addToCartImg[props.index].style.visibility = "hidden";
     };
     const visibleElement = () => {
-      _addToCartImg[props.index].style.visibility = "visible";
+      //_addToCartImg[props.index].style.visibility = "visible";
     };
   return (
     <>

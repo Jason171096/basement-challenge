@@ -7,10 +7,21 @@ module.exports = {
       'primary': '#1D1D1D',
       'secondary': '#151515',
      }),
-    extend: {},
+    extend: {
+      animation: {
+        'text-slide': 'text-slide 10s linear infinite',
+      },
+      keyframes: {
+        'text-slide': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' }
+        },
+    },
   },
+
   variants: {
     extend: {},
   },
   plugins: [],
+}
 }
