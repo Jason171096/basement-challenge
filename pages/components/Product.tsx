@@ -1,7 +1,7 @@
 import Image from "next/image";
 import worldIco from "../../public/icons/world.svg";
 import addImg from "../../public/add.png";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 interface IDataProduct {
   index: number;
@@ -10,7 +10,16 @@ interface IDataProduct {
   priceProduct: string;
 }
 
+
 const Product = (props: IDataProduct): JSX.Element => {
+
+    const [stateProducts, setStateProducts] = useState([
+    ])
+    
+    const clickHandler = (index: number) => {
+      
+    }
+
     const addToCartImg = useRef<HTMLDivElement>(null);
 
     const hiddenElement = () => {
@@ -24,6 +33,7 @@ const Product = (props: IDataProduct): JSX.Element => {
       <div className="bg-gradient-to-b from-black via-primary to-secondary border-b-2 cursor-pointer" 
       onMouseEnter={() => { visibleElement() }}
       onMouseLeave={() => { hiddenElement() }}
+      onClick={() => { clickHandler(props.index) }}
       >
         <div className="flex relative justify-center items-center">
           <div>

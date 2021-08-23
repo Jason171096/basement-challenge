@@ -7,7 +7,10 @@ import eyeIco from '../../public/icons/eye.svg';
 import four4kIco from '../../public/icons/4k.svg';
 import warningIco from '../../public/icons/warning.svg';
 
-const NavBar = () => {
+interface IButton {
+    functionCallback: Function
+}
+const NavBar = (props: IButton) => {
     let number = 0;
     return (
         <div className="flex flex-row items-center justify-between mt-8 max-w-screen-2xl mx-8 2xl:mx-auto">
@@ -37,7 +40,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div>
-                <button className="border-2 px-8 py-2 rounded-full text-base font-bold md:text-xl">CART ({number})</button>
+                <button className="border-2 px-8 py-2 rounded-full text-base font-bold md:text-xl" onClick={() => { props.functionCallback(true) }}>CART ({number})</button>
             </div>
         </div>
     )
