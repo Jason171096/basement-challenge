@@ -13,13 +13,6 @@ interface IDataProduct {
 
 const Product = (props: IDataProduct): JSX.Element => {
 
-    const [stateProducts, setStateProducts] = useState([
-    ])
-    
-    const clickHandler = (index: number) => {
-      
-    }
-
     const addToCartImg = useRef<HTMLDivElement>(null);
 
     const hiddenElement = () => {
@@ -33,7 +26,7 @@ const Product = (props: IDataProduct): JSX.Element => {
       <div className="bg-gradient-to-b from-black via-primary to-secondary border-b-2 cursor-pointer" 
       onMouseEnter={() => { visibleElement() }}
       onMouseLeave={() => { hiddenElement() }}
-      onClick={() => { clickHandler(props.index) }}
+      onClick={() => { }}
       >
         <div className="flex relative justify-center items-center">
           <div>

@@ -11,15 +11,20 @@ interface IButton {
     functionCallback: Function
 }
 const NavBar = (props: IButton) => {
+
+    const wind = () => {
+        console.log(window.innerWidth);
+      }
+
     let number = 0;
     return (
         <div className="flex flex-row items-center justify-between mt-8 max-w-screen-2xl mx-8 2xl:mx-auto">
             <div>
                 <div className="hidden md:flex">
-                    <Image className="cursor-pointer" src={logoImg} alt="Basement" onClick={() => {}}/>
+                    <Image className="cursor-pointer" src={logoImg} alt="Basement" onClick={() => {wind()}}/>
                 </div>
                 <div className="w-16 h-16 flex md:hidden"> 
-                    <Image className="cursor-pointer " src={logoIco} alt="Basement" onClick={() => {}}/>
+                    <Image className="cursor-pointer " src={logoIco} alt="Basement" onClick={() => {wind()}}/>
                 </div> 
             </div>
             <div className="flex content-center space-x-3 hidden md:flex">
