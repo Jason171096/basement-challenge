@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ItemProduct } from '../components/GridProducts'
+import shirtImg from '../../public/products/shirt.png';
 
 type Props = {
     item: ItemProduct
@@ -10,7 +11,7 @@ const CardYourCart = () => {
     <div>
       <div className="flex flex-row h-[200px] text-white border p-3 ">
         <div className="w-[150px] bg-gradient-to-b from-black via-primary to-secondary">
-          {/* <Image src={""} /> */}
+          <Image src={shirtImg} />
         </div>
         <div className="w-[300px] flex flex-col justify-between ml-3">
           <div>

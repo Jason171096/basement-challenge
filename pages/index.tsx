@@ -1,6 +1,6 @@
 import type {NextPage} from "next";
 import { Drawer } from '@material-ui/core';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles, Theme, } from '@material-ui/core/styles';
 import { useState } from "react";
 
 import NavBar from "./components/NavBar";
@@ -30,11 +30,11 @@ const windowHeight = () => {
   return height
 }
 
-  const useStyles = makeStyles(() =>
+  const useStyles = makeStyles((theme: Theme) =>
       createStyles({
         drawerPaper: {
           height: 500,//Number(console.log(windowHeight())),
-          width: Number(console.log(windowWidth())),
+          width: 500//Number(console.log(windowWidth())),
         },
 }));
 
@@ -44,8 +44,6 @@ const windowHeight = () => {
 
   const callbackOnClick = (bool: boolean) => {
     setCartOpen(bool)
-    windowWidth()
-    windowHeight()
   }
   return (
     <div className="bg-black">
