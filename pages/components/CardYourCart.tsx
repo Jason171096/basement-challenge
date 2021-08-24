@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ItemProduct } from '../components/GridProducts'
-import shirtImg from '../../public/products/shirt.png';
+import { ItemProduct } from "../components/GridProducts"
+import shirtImg from "../../public/products/shirt.png";
 
 type Props = {
     item: ItemProduct

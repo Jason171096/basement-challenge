@@ -1,11 +1,11 @@
 import Image from "next/image";
-import logoImg from '../../public/logo.svg';
-import logoIco from '../../public/favicon.png';
-import nuclearIco from '../../public/icons/nuclear.svg';
-import hdIco from '../../public/icons/hd.svg';
-import eyeIco from '../../public/icons/eye.svg';
-import four4kIco from '../../public/icons/4k.svg';
-import warningIco from '../../public/icons/warning.svg';
+import logoImg from "../../public/logo.svg";
+import logoIco from "../../public/favicon.png";
+import nuclearIco from "../../public/icons/nuclear.svg";
+import hdIco from "../../public/icons/hd.svg";
+import eyeIco from "../../public/icons/eye.svg";
+import four4kIco from "../../public/icons/4k.svg";
+import warningIco from "../../public/icons/warning.svg";
 
 interface IButton {
     functionCallback: Function

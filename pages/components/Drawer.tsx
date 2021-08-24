@@ -1,10 +1,10 @@
 import Image from "next/image";
-import closeIco from '../../public/icons/close.svg';
-import yourCartImg from '../../public/yourcart.png';
-import yourCartImgMobile from '../../public/yourcartmobile.png';
-import checkout from '../../public/checkout.png';
+import closeIco from "../../public/icons/close.svg";
+import yourCartImg from "../../public/yourcart.png";
+import yourCartImgMobile from "../../public/yourcartmobile.png";
+import checkout from "../../public/checkout.png";
 import CardYourCart from "./CardYourCart";
-import { ItemProduct } from '../components/GridProducts'
+import { ItemProduct } from "../components/GridProducts";
 
 type Props = {
     items: ItemProduct[]

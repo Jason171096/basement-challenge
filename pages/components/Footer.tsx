@@ -1,5 +1,5 @@
 import Image from "next/image";
-import footerImg from '../../public/footer.svg';
+import footerImg from "../../public/footer.svg";
 
 function Footer() {
     return (

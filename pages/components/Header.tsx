@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headerImg from '../../public/header.svg';
+import headerImg from "../../public/header.svg";
 
 const Header = () => {
     return (
